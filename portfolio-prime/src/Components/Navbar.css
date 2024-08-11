@@ -1,0 +1,49 @@
+/* General styles for the navbar */
+.navbar {
+    background-color: #000; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; 
+    color: #fff;
+  }
+  
+  /* Logo container styling */
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-container h2 {
+    border: 2px solid #fff; /* White border */
+    padding: 10px 20px; /* Padding inside the logo */
+    border-radius: 30px; /* Rounded corners */
+    display: flex;
+    align-items: center;
+    font-family: 'Arial', sans-serif; /* Sans-serif font */
+    font-size: 18px; /* Font size for the logo text */
+    font-weight: 400; /* Normal font weight */
+    position: relative; /* Positioning context for the ™ symbol */
+  }
+  
+  /* Navigation list styling */
+  .nav-list {
+    list-style-type: none; /* Remove default list styling */
+    display: flex; /* Align items in a row */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .nav-link {
+    margin: 0 4vw; /* Space between navigation items */
+    background-color: #000;
+    border: none;
+    color: #fff; /* White text color */
+    font-size: 16px; /* Font size for the nav items */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  .nav-link:hover {
+    color: #ccc; /* Lighter color on hover */
+  }
+  
