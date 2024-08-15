@@ -7,7 +7,7 @@ const Hero = () => {
     <div className="hero-container">
       <img src={heroImage} alt="Hero" className="hero-image" />
       <div className="text-container">
-        <h1 className="title">howdy folks, I'm</h1>
+        <h1 className="title">hello folks, I'm</h1>
         <p className="subtitle">Victor Branson</p>
       </div>
     </div>

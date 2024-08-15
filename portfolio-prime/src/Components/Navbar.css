@@ -1,4 +1,5 @@
 /* General styles for the navbar */
+
 .navbar {
     background-color: #000; 
     display: flex;
@@ -20,7 +21,6 @@
     border-radius: 30px; /* Rounded corners */
     display: flex;
     align-items: center;
-    font-family: 'Arial', sans-serif; /* Sans-serif font */
     font-size: 18px; /* Font size for the logo text */
     font-weight: 400; /* Normal font weight */
     position: relative; /* Positioning context for the ™ symbol */

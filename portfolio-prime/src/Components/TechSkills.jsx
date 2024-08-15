@@ -1,26 +1,23 @@
-import React from 'react';
-import './TechSkills.css';
+import React from "react";
+import "./TechSkills.css";
 
 const TechSkills = () => {
-  const skills = [
-    ['JavaScript', 'Vuex', 'Git/SVN/CVS V.C. Software', 'Yarn/Grunt/Gulp/Webpack'],
-    ['Angular JS', 'Pinia', 'Agile Methodologies', 'NodeJS'],
-    ['React', 'NuxtJS', 'Design Systems', 'MongoDB'],
-    ['VueJS', 'Serverless', 'CSS3/Less/Sass', 'Java'],
-    ['Vue3', 'HTML5', 'Grid/Flex', 'Oracle/SQL Server']
-  ];
-
   return (
     <div className="tech-skills-container">
-      <h2 className="tech-skills-title">01&nbsp;&nbsp;Software skills</h2>
-      <div className="tech-skills-list">
-        {skills.map((column, index) => (
-          <ul key={index} className="tech-skills-column">
-            {column.map((skill, i) => (
-              <li key={i} className="tech-skill-item">{skill}</li>
-            ))}
-          </ul>
-        ))}
+      <h2 className="tech-skills-title">01 Software Skills</h2>
+      <div className="tech-skills-grid">
+        <div>JavaScript</div>
+        <div>Git</div>
+        <div>Yarn/Gulp/Webpack</div>
+        <div>Agile Methodologies</div>
+        <div>NodeJS</div>
+        <div>React</div>
+        <div>Design Systems</div>
+        <div>Serverless</div>
+        <div>CSS3/Sass</div>
+        <div>HTML5</div>
+        <div>Grid/Flex</div>
+        <div>SQL Server</div>
       </div>
     </div>
   );

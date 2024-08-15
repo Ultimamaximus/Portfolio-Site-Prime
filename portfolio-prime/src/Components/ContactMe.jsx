@@ -1,32 +1,28 @@
-import React from 'react';
-import './ContactMe.css';
+import React from "react";
+import "./ContactMe.css";
 
 const ContactMe = () => {
   return (
     <div className="contact-me-container">
-      <div className="contact-me-text">
+      <div className="contact-text">
         <p>
-          Ready to elevate your code base to new heights? Experience the exceptional expertise of a skilled mentor who effortlessly propels projects to the next level. Let’s partner with your needs to maximize your code's potential. Don't miss out on this opportunity!
+          Whether you're looking to build from the ground up or enhance an
+          existing project, I'm here to transform your ideas into polished
+          digital experiences. Let’s collaborate to push the boundaries of your
+          code and achieve outstanding results. Don’t settle for ordinary—unlock
+          the full potential of your project with my expertise."
         </p>
       </div>
-      <form className="contact-me-form">
-        <input type="text" placeholder="Your name here" className="contact-input" />
-        <input type="email" placeholder="Your email here" className="contact-input" />
-        <select className="contact-input">
-          <option>What are you interested in?</option>
-          <option>Web Development</option>
-          <option>Mentorship</option>
-          <option>Consultation</option>
-        </select>
-        <textarea placeholder="Resume it in a few words" className="contact-input"></textarea>
-        <div className="contact-checkbox-container">
-          <input type="checkbox" id="privacy-policy" />
-          <label htmlFor="privacy-policy">By sending my details, I have read and accept the Privacy policy.</label>
-        </div>
-        <button type="submit" className="contact-submit-button">
-          Let’s talk <span className="arrow">➔</span>
-        </button>
-      </form>
+      <div className="contact-form">
+        <form>
+          <input type="text" placeholder="Your name here" />
+          <input type="email" placeholder="Your email here" />
+          <textarea placeholder="Resume it in a few words"></textarea>
+          <button type="submit" className="submit-button">
+            Let's talk <span className="arrow">→</span>
+          </button>
+        </form>
+      </div>
     </div>
   );
 };

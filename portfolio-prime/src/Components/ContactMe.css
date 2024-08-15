@@ -1,0 +1,76 @@
+/* ContactMe.css */
+.contact-me-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .contact-text {
+    flex: .8;
+    margin-right: 50px;
+  }
+  
+  .contact-text h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .contact-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+  
+  .contact-form {
+    flex: 1;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #000;
+    border: none;
+    border-bottom: 1px solid #333;
+    color: #fff;
+    font-size: 1em;
+  }
+  
+  .contact-form textarea {
+    height: 100px;
+  }
+  
+  .submit-button {
+    border: 2px solid #fff; /* White border */
+    padding: 10px 20px; /* Padding inside the logo */
+    border-radius: 30px; /* Rounded corners */
+    background-color: #000;
+    color: #fff;
+    width: 23%;
+    display: flex;
+    align-items: center;
+    font-size: 18px; /* Font size for the logo text */
+    font-weight: 400; /* Normal font weight */
+    position: relative; /* Positioning context for the ™ symbol */
+  }
+  
+  .submit-button:hover {
+    background-color: #333;
+  }
+  
+  .submit-button .arrow {
+    margin-left: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .submit-button:hover .arrow {
+    transform: translateX(5px);
+  }
+  

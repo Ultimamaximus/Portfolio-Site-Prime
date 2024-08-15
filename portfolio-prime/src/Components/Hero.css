@@ -29,7 +29,6 @@
   
   .subtitle {
     font-size: 9.5rem; /* Larger text size for the name */
-    font-family: 'Arial', sans-serif; /* Sans-serif font */
     font-weight: bold; /* Bold style */
     margin: 0; /* Remove default margin */
     line-height: 1.2; /* Ensure consistent spacing */
