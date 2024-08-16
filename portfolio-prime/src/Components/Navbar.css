@@ -4,6 +4,8 @@
     background-color: #000; 
     display: flex;
     justify-content: space-between;
+    animation-duration: 1s; /* Duration of the animation */
+    animation-delay: .2s; /* 2-second delay before animation starts */
     align-items: center;
     padding: 10px 20px; 
     color: #fff;
