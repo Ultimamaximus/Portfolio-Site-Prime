@@ -1,11 +1,12 @@
-/* WorkSection.css */
 .work-section-container {
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: auto;
-    scroll-behavior: smooth; /* Optional: adds smooth scrolling */
+    overflow-x: hidden; /* Ensure the cloned content doesn't cause a visible scroll bar */
+    scroll-behavior: smooth;
     padding: 20px;
-    gap: 20px; /* Adds space between project items */
+    gap: 20px;
+    position: relative;
+    width: 100%;
 }
 
 .work-section-title {
@@ -15,30 +16,10 @@
     padding-left: 20px;
     margin-bottom: 5px;
     text-transform: uppercase;
-  }
+}
 
 .project-component {
-    flex: 0 0 auto; /* Prevents shrinking, auto width based on content */
-    width: 50%; /* Adjust width as per design */
+    flex: 0 0 auto;
+    width: 50%;
 }
 
-.work-section-container::-webkit-scrollbar {
-    height: 8px; /* Scrollbar height */
-}
-
-.work-section-container::-webkit-scrollbar-thumb {
-    background-color: #4a90e2; /* Scrollbar color */
-    border-radius: 10px;
-}
-
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.work-section-container::-webkit-scrollbar {
-    display: none;
-}
-
-/* Hide scrollbar for IE, Edge, and Firefox */
-.work-section-container {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-}
