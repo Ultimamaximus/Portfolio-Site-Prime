@@ -19,8 +19,6 @@
   
   .title {
     font-size: 2.5rem; /* Adjust to match the smaller text */
-    font-family: 'Georgia', serif; /* Use a serif font */
-    font-style: italic; /* Italic style */
     margin: 0; /* Remove default margin */
     margin-left: -2rem;
     margin-bottom: 1rem;
@@ -28,7 +26,7 @@
   }
   
   .subtitle {
-    font-size: 9.5rem; /* Larger text size for the name */
+    font-size: 8.5rem; /* Larger text size for the name */
     font-weight: bold; /* Bold style */
     margin: 0; /* Remove default margin */
     line-height: 1.2; /* Ensure consistent spacing */

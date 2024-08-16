@@ -14,18 +14,18 @@ const WorkSection = () => {
     let scrollAmount = 0;
 
     const scrollStep = () => {
-      if (container.scrollWidth - container.clientWidth === scrollAmount) {
-        container.scrollTo({ left: 0, behavior: "instant" });
+      if (container.scrollWidth - container.clientWidth <= scrollAmount) {
         scrollAmount = 0;
       } else {
         scrollAmount += 1; // Adjust speed here
-        container.scrollTo({ left: scrollAmount, behavior: "smooth" });
       }
+      container.scrollLeft = scrollAmount;
+      requestAnimationFrame(scrollStep);
     };
 
-    const scrollInterval = setInterval(scrollStep, 20); // Adjust the interval for speed
+    requestAnimationFrame(scrollStep);
 
-    return () => clearInterval(scrollInterval); // Cleanup on component unmount
+    return () => cancelAnimationFrame(scrollStep); // Cleanup on component unmount
   }, []);
 
   return (
